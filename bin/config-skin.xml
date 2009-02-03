@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget userId="ba8509d6cb58cfb03ef8acca1bf91ff9" widgetType="mixtape" flashVersion="9.0.0" id="120bd07fbbb6b340d817b39cd0dfa114" version="2.0">
+  <title>The Launch</title>
+  <creator>.mc</creator>
+  <properties>
+<volume>75</volume><autoplay>false</autoplay><crossfade>1</crossfade><scale>90</scale>  </properties>
+  <skin name="Audio Magnetics (ugly)" id="7">
+    <properties>
+<shadow>0</shadow><gloss>20</gloss><outlines>0</outlines><frameColor>CCCCCC</frameColor><bodyColor>66CCFF</bodyColor><gearboxColor>CCCCCC</gearboxColor><gearColor>663300</gearColor><threaderColor>CCCCCC</threaderColor><text size="16" bgAlpha="0" color="000000" bgColor="FFFFFF" align="CENTER"></text><trackText x="29" y="22" align="center" width="280"></trackText><artistText x="23" y="36" align="center" width="280"></artistText>    </properties>
+  </skin>
+</widget>

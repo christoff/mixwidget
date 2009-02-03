@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" version="1">
+  <title>title</title>
+  <creator>mc</creator>
+  <trackList>
+    <track>
+      <location>http://antinomian.com/lcds_all_my_friends.mp3</location>
+      <title>All My Friends</title>
+      <creator>LCD Soundsystem</creator>
+      <album>Sound Of Silver</album>
+      <duration></duration>
+      <extension application="seeqpod">
+        <mp3_url_id>379114cb5aca48fa9ddd302f59db040da1d5c228</mp3_url_id>
+        <has_music_rex>true</has_music_rex>
+        <song_id>3124a8096fd46be818725be52db1e366687a06d2</song_id>
+        <cache_location/>
+      </extension>
+    </track>
+    <track>
+      <location>http://www.swyzzlestyx.com/rockandroll/Ring-My-Bell.mp3</location>
+      <title>Ring My Bell</title>
+      <creator>Anita Ward</creator>
+      <album>Billboard Top Hits: 1979</album>
+      <duration></duration>
+    </track>
+    <track>
+      <location>http://love-my-oldies.freehomepage.com/music/oldies/bt%20express%20-%20do%20it%20till%20your%20satisfied.mp3</location>
+      <title>Do It Till Your Satisfied</title>
+      <creator>BT Express</creator>
+      <album>Do It (Til You're Satisfied)</album>
+      <duration></duration>
+      <extension application="seeqpod">
+        <mp3_url_id>334e7e60ed51b18804c4a8149db83059e497d6a3</mp3_url_id>
+        <has_music_rex>false</has_music_rex>
+        <song_id></song_id>
+        <cache_location/>
+      </extension>
+    </track>
+    <track>
+      <location>http://www.greenpeaness.org/mp3/hotchip_piano.mp3</location>
+      <title>My Piano (Original)</title>
+      <creator>Hot Chip</creator>
+      <album>My Piano CDR</album>
+      <duration></duration>
+      <extension application="seeqpod">
+        <mp3_url_id>5c83c17ae9cae3d1c9ada59f4838d536fc61da9e</mp3_url_id>
+        <has_music_rex>true</has_music_rex>
+        <song_id>6397c05f8192e8560872e86519c89d01a2bb2319</song_id>
+        <cache_location/>
+      </extension>
+    </track>
+    <track>
+      <location>http://fineairportparking.com/Another%20Woman.mp3</location>
+      <title>Another Woman</title>
+      <creator>Moby</creator>
+      <album>18</album>
+      <duration></duration>
+    </track>
+    <track>
+      <location>http://waxy.org/random/audio/Nina_Simone_-_See-Line_Woman.mp3</location>
+      <title>See-Line Woman</title>
+      <creator>Nina Simone</creator>
+      <album>Verve Jazz Masters 17</album>
+      <duration></duration>
+    </track>
+    <track>
+      <location>http://www.theclerisy.net/skatterbrain/11_beautiful_life.mp3</location>
+      <title>Beautiful Life</title>
+      <creator>Gui Boratto</creator>
+      <album>Chromophobia</album>
+      <duration></duration>
+      <extension application="seeqpod">
+        <mp3_url_id>9cc98c1ce3d56dd69c5464f0a6d4148ae39fd25d</mp3_url_id>
+        <has_music_rex>true</has_music_rex>
+        <song_id>f50c1a586fd1ef70d1ebc5a034f82331b5d90fb0</song_id>
+        <cache_location/>
+      </extension>
+    </track>
+  </trackList>
+</playlist>

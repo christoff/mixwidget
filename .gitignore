@@ -1,7 +1,7 @@
 .DS_Store
 .actionScriptProperties
 .project
-.actionScriptProperties/*
+.settings/*
 testapp/bin-debug/*
 testapp/html-template/*
 testapp/html-template/*

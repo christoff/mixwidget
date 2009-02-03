@@ -83,6 +83,10 @@ package mixwidget.mixtape
 	  
 	  public function Mixtape()
 	  {	  	
+	  	// config
+      Security.allowDomain("*");
+      Util.DEBUG = false;
+	  	
 	  	// In accordance with the Mixwidget License the "license" and "activateContextMenu"
 	  	// method below must not be modified, moved, removed, or in any way inhibited
 	  	// from being executed. In the case of "license" this includes
@@ -92,10 +96,6 @@ package mixwidget.mixtape
 	  	activateContextMenu();
 	  	
 	  	Util.d();
-	    
-	    // config
-	    Security.allowDomain("*");
-	    Util.DEBUG = true;
 	    
 	    // init
 	    Global.stage = this.stage;
@@ -334,8 +334,6 @@ package mixwidget.mixtape
       this.removeChild(this.first_play_btn);
       
       addStageRollOvers();
-      
-      trace(' w: ' + template.width + ' s ' + stage.scaleX, 1);
     }
     
     private function addStageRollOvers():void
@@ -364,7 +362,7 @@ package mixwidget.mixtape
 
     private function onStageMouseLeave(event:Event):void
     {
-      Util.d();
+      // Util.d();
       this.controller.disableVolumeRollover();
       this.controller.hideVolSlider();
       removeEventListener(Event.ENTER_FRAME, determineShowController);

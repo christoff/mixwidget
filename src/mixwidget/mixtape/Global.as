@@ -25,6 +25,6 @@ package mixwidget.mixtape
 	{
 		// shortcut to use stage in vertical list
 		public static var stage:Stage;
-
+		public static var BASE:String;
 	}
 }

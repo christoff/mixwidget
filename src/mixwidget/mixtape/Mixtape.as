@@ -165,17 +165,21 @@ package mixwidget.mixtape
 			this.image_url = this.loaderInfo.parameters.image;
 			this.skin_url = this.loaderInfo.parameters.skin;
 			
+			var pattern:RegExp = /(?P<path>.*)(?P<delim>\\|\/).*\.swf/;
+			var a:Array = pattern.exec(this.loaderInfo.url);
+			Global.BASE = a.path + a.delim;
+			
 			var fv_ap:String = this.loaderInfo.parameters.autoplay;
 			this.autoplay = (!fv_ap || fv_ap == 'false' || fv_ap == '0') ? false : true;
 			
 			if(!widget_config_url || widget_config_url == ""){
 				Util.d('using default config: config.xml');
-				this.widget_config_url = 'config.xml';
+				this.widget_config_url = Global.BASE + 'config.xml';
 			}
 			
 			if(!playlist_url || playlist_url == ""){
 				Util.d('using default playlist: playlist.xspf');
-				this.playlist_url = 'playlist.xspf';
+				this.playlist_url = Global.BASE + 'playlist.xspf';
 			}
 		}
 		
@@ -453,7 +457,7 @@ package mixwidget.mixtape
     	var context_menu:ContextMenu = new ContextMenu();
       context_menu.hideBuiltInItems();
     	
-    	var item:ContextMenuItem = new ContextMenuItem("Mixwidget v1.0 - an open source mixtape");
+    	var item:ContextMenuItem = new ContextMenuItem("About mixwidget.org...");
     	context_menu.customItems.push(item);
     	item.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, onContextSelect);
     	

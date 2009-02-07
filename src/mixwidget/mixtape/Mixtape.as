@@ -1,7 +1,7 @@
 ﻿/* The contents of this file are subject to the Common Public Attribution
  * License Version 1.0. (the "License"); you may not use this file except in
  * compliance with the License. You may obtain a copy of the License at
- * http://mixwidget.com/license. The License is based on the Mozilla Public
+ * http://mixwidget.org/license-full. The License is based on the Mozilla Public
  * License Version 1.1, but Sections 14 and 15 have been added to cover use of
  * software over a computer network and provide for limited attribution for the
  * Original Developer. In addition, Exhibit A has been modified to be consistent
@@ -11,7 +11,7 @@
  * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
  * the specific language governing rights and limitations under the License.
  * 
- * The Original Code is Mixwidget.
+ * The Original Code is Mixwidget.org.
  * 
  * The Original Developers are Michael Christoff & Radley Marx.  The Initial 
  * Developers of the Original Code are Michael Christoff & Radley Marx.
@@ -447,7 +447,7 @@ package mixwidget.mixtape
       showWidgetAgain();
     }
     
-    // In accordance with the Mixwidget License (http://mixwidget.com/license),
+    // In accordance with the Mixwidget License (http://mixwidget.org/license-full),
     // the context menu should not be removed. Additions to the menu are permitted,
     // but the item entitled "Mixwidget v1.0 - an open source mixtape" should remain 
     // unmodified. Please contact licensing@mixwidget.com for inquiries.
@@ -464,7 +464,7 @@ package mixwidget.mixtape
     	this.contextMenu = context_menu;
     }
     
-    // In accordance with the Mixwidget License (http://mixwidget.com/license),
+    // In accordance with the Mixwidget License (http://mixwidget.org/license-full),
     // this function should not be removed, modified or in any way inhibited from
     // executing.
     private function onContextSelect(event:ContextMenuEvent):void
@@ -472,21 +472,21 @@ package mixwidget.mixtape
     	flash.net.navigateToURL(new URLRequest("http://mixwidget.com/")); 
     }
     
-    // In accordance with the Mixwidget License (http://mixwidget.com/license),
+    // In accordance with the Mixwidget License (http://mixwidget.org/license-full),
     // this copyright notice should not be modified or removed. Please contact
     // licensing@mixwidget.com for inquiries.
     private function license():void{
     	trace();
       trace("######################################################################################");
-      trace("# Mixwidget v1.0 - a free and open source flash mixtape widget                       #");
+      trace("# Mixwidget.org - the open source mixtape                                            #");
       trace("#                                                                                    #");
-      trace("#                                  by Michael Christoff & Radley Marx                #");
+      trace("#                          by Michael Christoff & Radley Marx                        #");
       trace("######################################################################################");
       trace();
       trace("The contents of this file are subject to the Common Public Attribution");
       trace("License Version 1.0. (the \"License\"); you may not use this file except in");
       trace("compliance with the License. You may obtain a copy of the License at");
-      trace("http://mixwidget.com/license. The License is based on the Mozilla Public");
+      trace("http://mixwidget.org/license-full. The License is based on the Mozilla Public");
       trace("License Version 1.1, but Sections 14 and 15 have been added to cover use of");
       trace("software over a computer network and provide for limited attribution for the");
       trace("Original Developer. In addition, Exhibit A has been modified to be consistent");
@@ -496,7 +496,7 @@ package mixwidget.mixtape
       trace("WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for");
       trace("the specific language governing rights and limitations under the License.");
       trace();
-      trace("The Original Code is Mixwidget.");
+      trace("The Original Code is Mixwidget.org.");
       trace();
       trace("The Original Developers are Michael Christoff & Radley Marx.  The Initial"); 
       trace("Developers of the Original Code are Michael Christoff & Radley Marx");

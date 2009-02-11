@@ -81,11 +81,13 @@ package mixwidget.mixtape
     // Constructor Methods
     //**********************************
 	  
+	  
+	  // TODO: add volume to flashvars
 	  public function Mixtape()
 	  {	  	
 	  	// config
       Security.allowDomain("*");
-      Util.DEBUG = false;
+      Util.DEBUG = true;
 	  	
 	  	// In accordance with the Mixwidget License the "license" and "activateContextMenu"
 	  	// method below must not be modified, moved, removed, or in any way inhibited

@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget userId="ba8509d6cb58cfb03ef8acca1bf91ff9" widgetType="mixtape" flashVersion="9.0.0" id="599021f4f27e8fa458f0bd988ff593a1" version="2.0">
-  <title>gui boratto</title>
-  <creator></creator>
-  <properties>
-<volume>75</volume><autoplay>false</autoplay><crossfade>1</crossfade><scale>100</scale><image rotation="0" x="-13" scale="36" y="-10" type="orig" mask="full"></image>  </properties>
-  <skin>
-    <properties>
-<shadow>0</shadow><gloss>30</gloss><outlines>0</outlines><frameColor>CCCCCC</frameColor><bodyColor>66CCFF</bodyColor><gearboxColor>CCCCCC</gearboxColor><gearColor>333333</gearColor><threaderColor>CCCCCC</threaderColor><text size="18" bgAlpha="0" color="FFFFFF" bgColor="FFFFFF" align="LEFT"></text><trackText x="36" y="18" width="260"></trackText><artistText x="36" y="39" width="260"></artistText>    </properties>
+<widget version="2.1" flashVersion="9.0.0"> 
+  <title>Open Source Music Sampler</title> <!-- shown at opening -->
+  <creator>mixwidget.org</creator>         <!-- shown at opening -->
+  <image rotation="0" x="0" scale="25" y="0" mask="body"></image> 
+  <!-- comment out image tag to remove image -->
+  <skin imageEnabled="true">
+  <!--set imageEnabled to anything but true to disable -->
+    <shadow>0</shadow>                   <!-- 0-100 -->
+    <gloss>30</gloss>                    <!-- 0-100 -->
+    <outlines>20</outlines>              <!-- 0-100 -->
+    <frameColor>CCCCCC</frameColor>      <!-- hex color-->
+    <bodyColor>66CCFF</bodyColor>        <!-- hex color-->
+    <gearboxColor>CCCCCC</gearboxColor>  <!-- hex color-->
+    <gearColor>598B9F</gearColor>        <!-- hex color-->
+    <threaderColor>CCCCCC</threaderColor><!-- hex color-->
+    <text size="18" color="FFFFFF" bgAlpha="0" bgColor="FFFFFF" align="LEFT"></text>
+    <!-- bgAlpha = 0-100, align = LEFT, CENTER, RIGHT -->
+    <trackText x="26" y="21" width="260"></trackText>
+    <artistText x="28" y="38" width="260"></artistText>    
   </skin>
 </widget>

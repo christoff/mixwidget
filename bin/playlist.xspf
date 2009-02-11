@@ -1,119 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<playlist xmlns="http://xspf.org/ns/0/" version="1">
-  <title>title</title>
-  <creator>mc</creator>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+  <title>Open Source Music Sampler</title>
+  <creator>mixwidget.org</creator>
   <trackList>
     <track>
-      <location>http://matula.hu/matrec/contort/06-the_clash_-_mustapha_dance.mp3</location>
-      <title>Mustapha Dance</title>
-      <creator>The Clash</creator>
-      <album>Super Black Market Clash</album>
-      <duration></duration>
-      <extension application="seeqpod">
-        <mp3_url_id>f68a142e17025fde67c1f91013316a9dd1bcafc0</mp3_url_id>
-        <has_music_rex>true</has_music_rex>
-        <song_id>32a33ea16470b272ce125b8de46a5350954fb26a</song_id>
-        <cache_location/>
-      </extension>
-    </track>
-    <track>
-      <location>http://squar3.com/site/traxx/songs/hits/cuts/Metro%20Area%20-%20Mr.%20Vegas%20(Hollertronix%20Remix).mp3</location>
-      <title>Here Miura / Pull Up</title>
-      <creator>Metro Area / Mr. Vegas</creator>
-      <album>http://banananutrament.blogspo</album>
-      <duration></duration>
-      <extension application="seeqpod">
-        <mp3_url_id>de52f42121e55bda4a39c7bf1c9bd3fa96dc1e29</mp3_url_id>
-        <has_music_rex>false</has_music_rex>
-        <song_id></song_id>
-        <cache_location/>
-      </extension>
-    </track>
-    <track>
-      <location>http://www.catapult.co.uk/resources/audio/18556/DEFECTED.mp3</location>
-      <title>Love Ritual</title>
-      <creator>Cerrone vs Louie Vega</creator>
-      <album>Louie Vega In The House</album>
-      <duration></duration>
-    </track>
-    <track>
-      <location>http://www.the-z-machine.com/aud/Zapp%20and%20Roger%20-%20All%20the%20Greatest%20Hits/04%20So%20Ruff,%20So%20Tuff.mp3</location>
-      <title>So Ruff, So Tuff</title>
-      <creator>Zapp &amp; Roger</creator>
-      <album>All The Greatest Hits</album>
-      <duration></duration>
-      <extension application="seeqpod">
-        <mp3_url_id>15fbcdcb96b76565c4072ab342b1a1fabc79e629</mp3_url_id>
-        <has_music_rex>false</has_music_rex>
-        <song_id></song_id>
-        <cache_location/>
-      </extension>
-    </track>
-    <track>
-      <location>http://denymeandbedoomed.com/100%20Greatest%20Songs%20of%20Rap%20&amp;%20Hip%20Hop/50%20-%20Grandmaster%20Flash%20%20-%20White%20Lines%20(1983).mp3</location>
-      <title>White Lines (1983)</title>
-      <creator>Grandmaster Flash</creator>
-      <album>Message From Beat Street: The Best Of Grandmaster Flash, Melle Mel &amp; The Furious Five</album>
-      <duration></duration>
-    </track>
-    <track>
-      <location>http://www.sveinbjorn.com/airwaves/Datarock%20-%20fa%20fa%20fa.mp3</location>
-      <title>fa fa fa</title>
-      <creator>datarock</creator>
-      <album>dj-kicks: annie</album>
-      <duration></duration>
-      <extension application="seeqpod">
-        <mp3_url_id>389213ec60db589da29622a6dc1086862e8897ae</mp3_url_id>
-        <has_music_rex>true</has_music_rex>
-        <song_id>033586033d1b08dbe722b7c87898a87253adfc8d</song_id>
-        <cache_location/>
-      </extension>
-    </track>
-    <track>
-      <location>http://www.mediamax.com/wagert/Hosted/LCD_Soundsystem_-_Big_Ideas.mp3</location>
-      <title>Big Ideas</title>
-      <creator>LCD Soundsystem</creator>
+      <location>http://mixwidget.s3.amazonaws.com/shannonsongs_-_Overboard.mp3</location>
+      <title>Overboard (acapella)</title>
+      <creator>Shannon Hurley</creator>
       <album></album>
       <duration></duration>
     </track>
     <track>
-      <location>http://www.loriglory.com/mix/yelle_je-veux-te-voir-(disco-d-remix).mp3</location>
-      <title>Je Veux Te Voir (Disco D Remix)</title>
-      <creator>Yelle</creator>
-      <album>Je Veux Te Voir</album>
-      <duration></duration>
-      <extension application="seeqpod">
-        <mp3_url_id>68531a728c572a7da7cc4c14937486cfe5e3521e</mp3_url_id>
-        <has_music_rex>true</has_music_rex>
-        <song_id>37c71e4afba03a21065cbfcdb524efc06be6e5e5</song_id>
-        <cache_location/>
-      </extension>
-    </track>
-    <track>
-      <location>http://palmsout.com/blog/NY%20Excuse%20%28Justice%20Remix%29.mp3</location>
-      <title>NY Excuse (Justice Remix)</title>
-      <creator>Soulwax</creator>
+      <location>http://mixwidget.s3.amazonaws.com/DoKashiteru_-_I_Fell_Out_of_the_Sky.mp3</location>
+      <title>I Fell Out of the Sky</title>
+      <creator>DoKashiteru</creator>
       <album></album>
-      <duration>0</duration>
-    </track>
-    <track>
-      <location>http://www.feedmegoodtunes.com/Tunes/FmGT_Chromeo_Call_Me_Up.mp3</location>
-      <title>Call Me Up</title>
-      <creator>Chromeo</creator>
-      <album>Fancy Footwork</album>
       <duration></duration>
-      <extension application="seeqpod">
-        <mp3_url_id>15dc91c2bf513ba9d7c69a19b3079f5ca25b9d07</mp3_url_id>
-        <has_music_rex>true</has_music_rex>
-        <song_id>2645aa6ae88e12a349d9b18508f233cbcfe03d75</song_id>
-        <cache_location/>
-      </extension>
     </track>
-    <track>
-      <location>http://www.box.net/index.php?rm=box_v2_download_file&amp;uniq_name=onehitwonder1&amp;file_id=f_76623143/167.%20Anita%20Ward%20-%20Ring%20My%20Bell.mp3</location>
-      <title>Ring my bell</title>
-      <creator>Anita Ward</creator>
-      <album>One Hit Wonders</album>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/George_Ellinas_-_Beginnings_and_Endings_(GE_Feel_for_More_mix).mp3</location>
+      <title>Beginnings and Endings (GE Feel for More mix)</title>
+      <creator>George Ellinas</creator>
+      <album></album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/atoa_-_Broken.mp3</location>
+      <title>Broken</title>
+      <creator>Atoa</creator>
+      <album></album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/morgantj_-_caf_connection.mp3</location>
+      <title>Cafe Connection</title>
+      <creator>Morgantj</creator>
+      <album></album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/duckett_-_Wired_But_Disconnected.mp3</location>
+      <title>Wired But Disconnected</title>
+      <creator>Duckett</creator>
+      <album></album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/teru_-_Funky_Theme.mp3</location>
+      <title>Funky Theme</title>
+      <creator>Teru (ft. rdluchtproductions)</creator>
+      <album></album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/emergence.mp3</location>
+      <title>Emergence</title>
+      <creator>Trifonic</creator>
+      <album></album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/scarecrow_-_Mississippi_Kite.mp3</location>
+      <title>Mississippi Kite</title>
+      <creator>Scarecrow</creator>
+      <album></album>
+      <duration></duration>
+    </track>
+	<track>
+      <location>http://mixwidget.s3.amazonaws.com/Loveshadow_-_WE_R_1_(_Sunday_Drive_Mix_).mp3</location>
+      <title>WE R 1 ( Sunday Drive Mix )</title>
+      <creator>Loveshadow</creator>
+      <album></album>
       <duration></duration>
     </track>
   </trackList>

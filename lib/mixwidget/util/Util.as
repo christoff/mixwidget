@@ -21,6 +21,7 @@ package mixwidget.util
 {
 	import flash.events.IOErrorEvent;
 	import flash.events.SecurityErrorEvent;
+	import flash.system.Capabilities;
 	
 	public class Util
 	{
@@ -39,25 +40,28 @@ package mixwidget.util
     
     public static function d(s:String='', level:int = 0):void
     {
+      if(!DEBUG) return;
+      
       var spacer:String = '';
       var caller:String;
+      if(Capabilities.isDebugger){
       for(var i:int = 0; i<level; i++) { spacer += '  '; }
-      try{
-      	throw new Error();
-      }catch(e:Error){
-      	if(VERBOSE){
-      		caller = e.getStackTrace().split(/\r?\n\r?\tat /)[2].replace(/\[[^[]*\]/, "");
-      	}else{
-      		caller = e.getStackTrace().split(/\r?\n\r?\tat .*::/)[2].replace(/\[[^[]*\]/, "");
-      	}
-      }
-      if(DEBUG) {
-      	if(level > 0){
-      		trace(spacer + '- ' + s);
-      	}else{
-      		trace(caller + ': ' + s);
-      	}
-      }
+	      try{
+	      	throw new Error();
+	      }catch(e:Error){
+	      	if(VERBOSE){
+	      		caller = e.getStackTrace().split(/\r?\n\r?\tat /)[2].replace(/\[[^[]*\]/, "");
+	      	}else{
+	      		caller = e.getStackTrace().split(/\r?\n\r?\tat .*::/)[2].replace(/\[[^[]*\]/, "");
+	      	}
+	      }
+	    }
+	      
+	  	if(level > 0){
+	  		trace(spacer + '- ' + s);
+	  	}else{
+	  		trace(caller + ': ' + s);
+	  	}
     }
     
     public static function e(s:String):void

@@ -35,6 +35,7 @@ package {
     public function mixwidget()
     {
       var mixtape:Mixtape = new Mixtape();
+//      var debug:Debug = new Debug();
     }
   }
 }

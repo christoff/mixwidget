@@ -30,6 +30,7 @@ package mixwidget.mixtape
 	import flash.events.ContextMenuEvent;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import flash.external.ExternalInterface;
 	import flash.net.URLRequest;
 	import flash.net.navigateToURL;
 	import flash.system.Security;
@@ -84,10 +85,10 @@ package mixwidget.mixtape
 	  
 	  // TODO: add volume to flashvars
 	  public function Mixtape()
-	  {	  	
+	  {
 	  	// config
       Security.allowDomain("*");
-      Util.DEBUG = true;
+      Util.DEBUG = false;
 	  	
 	  	// In accordance with the Mixwidget License the "license" and "activateContextMenu"
 	  	// method below must not be modified, moved, removed, or in any way inhibited
@@ -106,6 +107,11 @@ package mixwidget.mixtape
       getFlashVars();
       loadXML();
 	    this.addEventListener(Event.ENTER_FRAME, onStageLoad);
+	  }
+	  
+	  private function debug():void
+	  {
+	  	ExternalInterface.call("alert", "test");
 	  }
 	  
 	  private function onStageLoad(event:Event):void

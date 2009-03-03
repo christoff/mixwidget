@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>Mixwidget - a free and open source mixtape widget</title>
+	<title>mixwidget.org - instructions</title>
 	
 	<script src="resources/swfobject.js" type="text/javascript"></script>
 	
@@ -16,6 +16,7 @@
 }
 .subtitle {
 	color: #95AE00;
+	margin-bottom: 0px;
 }
 .text {
 	color: #333;
@@ -28,8 +29,9 @@
 
 	<table width="100%" border="0" cellpadding="20">
 	  <tr>
-	    <td valign="top"><h2 class="subtitle"><em>mixwidget: the open source mixtape</em></h2>
-	      <h3>instructions          </h3>
+	    <td valign="top">
+	      <h2 class="subtitle"><em>mixwidget.org: the open source mixtape</em></h2>
+	      <h2 style="margin-bottom:0px">Instructions</h3>
 	      <table width="100%" border="0" cellspacing="5" cellpadding="0">
 	        <tr>
 	          <td width="160"><p>what's here:</p></td>
@@ -57,19 +59,21 @@
             </tr>
           </table>
 	      <p><em>Note: these instructions can also be found online: <a href="http://mixwidget.org/howto"><strong>http://mixwidget.org/howto</strong></a></em><strong></strong></p>
+	      
 	      <h2><strong>how to use</strong> - playback</h2>
           <p>To get started, <a href="http://mixwidget.org/download">download the demo file.</a></p>
+        <div style="background: #BFDCFF; border: 1px solid black; padding: 5px">
           <p><strong>play on your desktop</strong></p>
           <ol>
-            <li>Unzip / open the sample .zip file.</li>
-            <li>Double-click <em><strong>index.html</strong></em> to view in a browser.</li>
+            <li>Click <a style="color: #00BF3E; font-size: 1.25em" href="index.html" target="_blank"><em><strong>index.html</strong></em></a> to view in a browser.</li>
             <li>Press the big play button on the cassette.</li>
-            <li>If necessary, you may need to<a href="#localsecurity"> update your local Flash Player security settings</a>.</li>
+            <li>If nothing plays then you'll have to update your <a href="#localsecurity"> update your local Flash Player security settings</a>
           </ol>
+        </div>
           <p><strong>play via the internet</strong></p>
           <ol>
             <li>Unzip and upload the example folder to your host <em><strong>public_html</strong></em> folder.</li>
-            <li>If ncessary, change permissions (recursively) for the <em><strong>mixwdget-example</strong></em> folder to 755.</li>
+            <li>If necessary, change permissions (recursively) for the <em><strong>mixwdget-example</strong></em> folder to 755.</li>
             <li>Check it out: <em><strong>http:// (your-site.com) /mixwidget-demo/</strong></em></li>
           </ol>
           <p><strong>embed in webpage, myspace, or blog</strong></p>
@@ -96,271 +100,25 @@
           <p>Flash is careful about preventing outside websites and services from accessing your local files. This includes &quot;safe&quot; stuff like music files, pictures, and xml.</p>
           <p>This setting only needs to be changed once for this example (as long as you don't move the folder) and  will allow only the folder access to online content; your other folders &amp; files will not be affected. Please note that these settings work for the exmple file only - your custom mixwidget may require more work.</p>
           <ol>
-            <li>open <em><strong>index.html</strong></em> and press  play on the widget</li>
-            <li>If the security window pops-up, follow the remaining steps:</li>
-            <li>Make sure the location Flash is trying to communicate is:<br/>
-              <br/>
-              <em><strong>mixwidget.s3.amazonaws.com</strong></em><br/>
-              <br/>
+            <li>Navigate to your
+              <a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04a.html">Adobe Flash Security Settings</a>
             </li>
-            <li>If it matches <em>exactly</em>, Press &quot;Settings...&quot;</li>
             <li>This link will take to to a webpage containing your security control panel. Yes it looks like a webpage, yes it really controls your local player settings, and yes Adobe/Macromedia developers are all  on crack.</li>
             <li>You should be in the &quot;Global Security Settings&quot; panel/tab</li>
             <li>Open the &quot;Edit locations...&quot; combo box</li>
             <li>Select &quot;Add location...&quot;</li>
             <li>Press &quot;Browse for folder...&quot;</li>
-            <li>Navigate to your local <em><strong>mixwidget-example</strong></em> folder.</li>
+            <li>Navigate to your local <em><strong>mixtape folder</strong></em> (ex. ~/mixes/mixwidget-example, c:/mixes/my-rad-mix). *</li>
             <li>Press &quot;Select&quot; or &quot;OK&quot; to allow.</li>
             <li>Confirm your local path is listed in the &quot;Always trust files in these locations:&quot; list window.</li>
-            <li>All done (you may close the browser page).</li>
+            <li>Open or refresh your index.html in your mixtape folder</li>
+            <li>All tracks that are still available should play (many probably won't be)</li>
           </ol>
-          <h2>&nbsp;</h2>
-          <h2><strong>how to use</strong> - make your own</h2>
-          <p><strong>required files</strong>
-            <style>
-  table.files { font-size: 10pt;}
-  table { border-collapse:collapse; }
-  td { border-color: #DDDDDD;}
-  th { background: #666666; color: #FFFFFF;}
-  .subhead th { background: #AAAAAA; color: #FFFFFF;}}
-            </style>
-          </p>
-          <table class="files" border="1" cellpadding="4" width="100%">
-            <tbody>
-              <tr>
-                <th>file</th>
-                <th>description</th>
-                <th>required</th>
-              </tr>
-              <tr>
-                <td>mixwidget.swf </td>
-                <td>the mixtape widget</td>
-                <td align="center">x</td>
-              </tr>
-              <tr class="subhead">
-                <th colspan="3">resources</th>
-              </tr>
-              <tr>
-                <td>playlist.xspf</td>
-                <td>full list of tracks in your mixtape</td>
-                <td align="center">x</td>
-              </tr>
-              <tr>
-                <td>config.xml</td>
-                <td>display settings for the cassette</td>
-                <td align="center">x</td>
-              </tr>
-              <tr>
-                <td>image.jpg </td>
-                <td>your cassette artwork</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>skin.jpg</td>
-                <td>the cassette skin</td>
-                <td></td>
-              </tr>
-              <tr class="subhead">
-                <th colspan="3">embed code</th>
-              </tr>
-              <tr>
-                <td>index.html</td>
-                <td>basic web-based install</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>fullscreen.html</td>
-                <td>sample fullscreen code (good for popup)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>embed.html</td>
-                <td>sample code for embedded widget (myspace, etc)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>swfobject.js</td>
-                <td>required by index.html for javascript style embed</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-          <p>&nbsp;</p>
-          <h2>the playlist</h2>
-          <p>Based the popular <a href="http://xspf.org/">XSPF</a> playlist format, the <a href="http://mixwidget.org/mixwidget-demo/playlist.xspf"><strong><em>playlist.xspf</em></strong></a> file contains your complete playlist including each track's location, title, and creator.
-            The XSPF specification allows additional data nodes, but mixwidget only needs three:<br />
-            <br />
-  &nbsp;&nbsp;- <b>location</b> - url / path to audio file<br />
-  &nbsp;&nbsp;- <b>title</b> - song / track title<br />
-  &nbsp;&nbsp;- <b>creator</b> - name of track creator or artist</p>
-          <p>To edit the playlist, simply copy/paste new &lt;track&gt; nodes in the order you want tracks to play,  change the required info, and save the file. You may change the name &amp; location of <strong><em>playlist.xspf</em></strong>, but you'll need to <a href="#flashvars">update the Flashvars</a> (variables) in the embed code.<br />
-          </p>
-          <h2>the cassette</h2>
-          <p>The look and style of the cassette is customized using a simple XML file 
-            (<a href="http://mixwidget.org/mixwidget-demo/config.xml">config.xml</a>). 
-            There are lots of different settings you can apply so play around:</p>
-          <p> <strong>general</strong><br />
-          </p>
-          <table width="100%" border="0" cellspacing="5" cellpadding="0">
-            <tr>
-              <td valign="top">title / creator</td>
-              <td valign="top">name and mix title are shown when the mixwidget is first displayed</td>
-            </tr>
-          </table>
-          <p><strong>image</strong> (i.e. user image)</p>
-          <table width="100%" border="0" cellspacing="5" cellpadding="0">
-            <tr>
-              <td valign="top">scale</td>
-              <td valign="top">image scale (percentage)</td>
-            </tr>
-            <tr>
-              <td valign="top">mask (&quot;full&quot; or &quot;body&quot;)</td>
-              <td valign="top"> portion of the cassette that shows your image</td>
-            </tr>
-            <tr>
-              <td valign="top">x / y</td>
-              <td valign="top">x / y position of image</td>
-            </tr>
-          </table>
-          <p><br />
-          </p>
-          <p><strong>style / color</strong></p>
-          <table width="100%" border="0" cellspacing="5" cellpadding="0">
-            <tr>
-              <td valign="top">shadow (0 - 100) </td>
-              <td valign="top">shadow strength </td>
-            </tr>
-            <tr>
-              <td valign="top">gloss (0 - 100) </td>
-              <td valign="top">glossiness</td>
-            </tr>
-            <tr>
-              <td valign="top">outlines (0 - 100) </td>
-              <td valign="top">edge lines visibility</td>
-            </tr>
-            <tr>
-              <td valign="top">&nbsp;</td>
-              <td valign="top">&nbsp;</td>
-            </tr>
-            <tr>
-              <td valign="top">frameColor</td>
-              <td valign="top">outer frame color</td>
-            </tr>
-            <tr>
-              <td valign="top">bodyColor</td>
-              <td valign="top">inner body color</td>
-            </tr>
-            <tr>
-              <td valign="top">gearboxColor</td>
-              <td valign="top">gear-box area color</td>
-            </tr>
-            <tr>
-              <td valign="top">gearColor</td>
-              <td valign="top">gears color</td>
-            </tr>
-            <tr>
-              <td valign="top">threaderColor</td>
-              <td valign="top">tape threader  color</td>
-            </tr>
-          </table>
-          <p><strong>text</strong></p>
-          <table width="100%" border="0" cellspacing="5" cellpadding="0">
-            <tr>
-              <td valign="top">size</td>
-              <td valign="top">font size</td>
-            </tr>
-            <tr>
-              <td valign="top">color</td>
-              <td valign="top">text color</td>
-            </tr>
-            <tr>
-              <td valign="top">bgAlpha (0 - 100) </td>
-              <td valign="top">text label background opacity</td>
-            </tr>
-            <tr>
-              <td valign="top">bgColor</td>
-              <td valign="top">text label background color</td>
-            </tr>
-            <tr>
-              <td valign="top">trackText</td>
-              <td valign="top">outer frame color</td>
-            </tr>
-            <tr>
-              <td valign="top">artistText</td>
-              <td valign="top">inner body color</td>
-            </tr>
-            <tr>
-              <td valign="top">align - (center, left, right)</td>
-              <td valign="top">text alignment / justification</td>
-            </tr>
-          </table>
-          <p>&nbsp;</p>
-          <p><strong>skin</strong></p>
-          <p> The mixwidget main contain up to  two different images: a custom <a href="http://mixwidget.org/mixwidget-demo/image.jpg"><em><strong>user image</strong></em></a> and a cassette-picture <a href="http://mixwidget.org/mixwidget-demo/skin.jpg"><strong><em>skin</em></strong></a>. </p>
-          <p>The <em><strong>skin</strong></em> is basically a picture of a cassette edited to match the size,  outlines, and &quot;holes&quot; of the cassette. When used, the <em><strong>skin</strong></em> will  replace the cassette background colors, but the glossy layer and edges can still be seen (and adjusted).</p>
-          <p>A skin can be enabled by setting the <em><strong>imageEnabled</strong></em> attribute in the <em><strong>skin</strong></em> node. If this
-            attribute is set to &quot;true&quot; <em><strong>skin.jpg</strong></em> will be used. Advanced  users  may want to
-            use a flashvar (<em><strong>skin)</strong></em> instead.</p>
-          <p>We've provided 37 ready-to-use skins courtesy of <a href="http://tapedeck.org/">tapedeck.org</a>.
-            Feel free to download <a href="https://mixwidget.s3.amazonaws.com/skins.zip">the zip (4.6mb)</a></p>
-          <p>&nbsp;</p>
-          <p><strong>user image</strong></p>
-          <p>The <em><strong>user image</strong></em> can be anything - a photo, artwork, or even another cassette skin. The user image rests on a layer above the skin and below the glossy layer and outlines. The <em><strong>mask</strong></em> setting allows you to choose if the image is full-sized (&quot;full&quot;) or only shows through the middle body (&quot;body&quot;) of the cassette.</p>
-          <p>When using the <em><strong>image</strong></em> node (see <a href="http://mixwidget.org/mixwidget-demo/config.xml">config.xml</a>)
-            you must have a file called &quot;image.jpg&quot;
-            in the same directory as the swf.</p>
-          <p>Advanced users: you may use a flashvar to specify the path / file instead, but the properties of the image node will revert to defaults (x=0, y=0, etc).
-            Setting the image flashvar overrides the image node.</p>
-          <p>&nbsp; </p>
-          <h2>page settings</h2>
-          <p><strong><a name="flashvars" id="flashvars"></a>ptional flashvar (embed) properties</strong></p>
-          <table width="100%" border="0" cellspacing="5" cellpadding="0">
-            <tr>
-              <td valign="top"><b>config</b></td>
-              <td valign="top">path/file - replaces config.xml</td>
-            </tr>
-            <tr>
-              <td valign="top"><b>playlist</b></td>
-              <td valign="top">path/file - replaces playlist.xspf</td>
-            </tr>
-            <tr>
-              <td valign="top"><b>image</b></td>
-              <td valign="top">path/file - replaces  image.jpg</td>
-            </tr>
-            <tr>
-              <td valign="top"><b>skin</b></td>
-              <td valign="top">path/file - replaces  skin.jpg</td>
-            </tr>
-            <tr>
-              <td valign="top"><b>autoplay</b></td>
-              <td valign="top">&quot;true&quot; or &quot;false&quot;</td>
-            </tr>
-            <tr>
-              <td valign="top"><b>volume</b></td>
-              <td valign="top">(not implemented)</td>
-            </tr>
-          </table>
-          <p><br />
-          </p>
-          <p><strong>display size</strong></p>
-          <p>Mixwidget.org is <a href="http://mixwidget.org/mixwidget-demo/mixwidget.swf">fully scalable</a>. 
-            Size is defined in the embed code.
-            The original resolution is 345 x 265, but any size should work just
-            fine. Here are a range of sizes so you don't have to get the calculator out:<br />
-  &nbsp;&nbsp;- 85 x 65 <br />
-  &nbsp;&nbsp;- 130 x 100 <br />
-  &nbsp;&nbsp;- 170 x 130 <br />
-  &nbsp;&nbsp;- 215 x 265 <br />
-  &nbsp;&nbsp;- 260 x 200 <br />
-  &nbsp;&nbsp;- 300 x 230 <br />
-  &nbsp;&nbsp;- 345 x 265 <br />
-  &nbsp;&nbsp;- 390 x 300 <br />
-  &nbsp;&nbsp;- 430 x 330 <br />
-  &nbsp;&nbsp;- 495 x 380 <br />
-  &nbsp;&nbsp;- 560 x 430 <br />
-  &nbsp;&nbsp;- 600 x 460 <br />
-  &nbsp;&nbsp;- 690 x 530</p>
-        <p class="text">For more info, please visit <a href="http://mixwidget.org">mixwidget.org</a>.</p></td>
+          
+          <em>* it will permit the highest level you go up in the directory so if you did c:/mixes you won't have this problem
+          for any mixes placed in c:/mixes</em>
+
+        <p class="text">For instructions on how to customize, please visit <a href="http://mixwidget.org/howto">mixwidget.org/howto</a>.</p></td>
 	    <td width="470" align="center" valign="top"><div id="flash_embed"> 
 	      <blockquote>
 	        <p>Oh no, something's missing!<br>
